@@ -14,6 +14,8 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
+import cn.bmob.v3.Bmob;
+
 public class MainActivity extends AppCompatActivity {
 
     int x = 0, y = 0, z;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bmob.initialize(getApplicationContext(),"6e4d5ffc19fe31b14ada255f23e5ae4d");
         setContentView(R.layout.activity_main);
         ImageButton btn1 = findViewById(R.id.imageButton);
         imageSwitcher = (ImageSwitcher) findViewById(R.id.imageSwitcher);
