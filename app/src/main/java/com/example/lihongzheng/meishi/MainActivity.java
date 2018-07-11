@@ -19,6 +19,7 @@ import cn.bmob.v3.Bmob;
 public class MainActivity extends AppCompatActivity {
 
     int x = 0, y = 0, z;
+    int c=0;
     ImageSwitcher imageSwitcher;
     private int index=0; //图片序号
     private int[ ] images;//存放图片id
