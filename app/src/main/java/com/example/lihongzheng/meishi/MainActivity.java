@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         images = new int[]{
                 R.drawable.luobotang,
                 //R.drawable.chaomian,
-                R.drawable.mutongfan,
+                R.drawable.mutongfan
 
         };
         btn1.setOnClickListener(new View.OnClickListener() {

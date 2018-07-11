@@ -71,7 +71,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton6"
+                android:id="@+id/imageButton10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -79,14 +79,14 @@
                 tools:ignore="DuplicateIds,InvalidId,VectorDrawableCompat" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/imageButton11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/changjiancaishi" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/imageButton12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -159,7 +159,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/家常菜"
+                android:id="@+id/jiachangcai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
