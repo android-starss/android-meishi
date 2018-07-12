@@ -47,6 +47,8 @@ android:orientation="vertical">
     android:layout_alignLeft="@+id/psd"
     android:layout_below="@+id/psd"
     android:layout_marginTop="44dp"
-    android:text="注册" />
+    android:textSize="24dp"
+    android:background="#FF3030"
+    android:text="注  册" />
 
 </RelativeLayout>
