@@ -8,18 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.lihongzheng.meishi.App;
 import com.example.lihongzheng.meishi.MainActivity;
 import com.example.lihongzheng.meishi.R;
 
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.datatype.BmobQueryResult;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
-import cn.bmob.v3.listener.SQLQueryListener;
-
-import static cn.smssdk.utils.a.e;
 
 public class LoginActivity extends Activity {
 
