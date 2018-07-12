@@ -1,6 +1,7 @@
 package com.example.lihongzheng.meishi;
 
 import android.app.MediaRouteButton;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,10 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
+import com.example.chenxuhua.meishi.App;
+import com.example.chenxuhua.meishi.LoginActivity;
+import com.example.chenxuhua.meishi.Person;
+import com.example.hanxiaofeng.meishi.myInformation;
 import cn.bmob.v3.Bmob;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,7 +44,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bmob.initialize(getApplicationContext(),"6e4d5ffc19fe31b14ada255f23e5ae4d");
         setContentView(R.layout.activity_main);
+
+        App app = (App) getApplication();
+        final Person person=(Person)app.getPerson();
+
         ImageButton btn1 = findViewById(R.id.imageButton);
+        ImageButton btn2=findViewById(R.id.gerenzhongxin);
         imageSwitcher = (ImageSwitcher) findViewById(R.id.imageSwitcher);
         imageSwitcher.setFactory(new ViewSwitcher.ViewFactory() { //设置工厂
             @Override
@@ -83,6 +93,20 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }).start();
+
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(person!=null){
+                    Intent intent1=new Intent(MainActivity.this,myInformation.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent2=new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent2);
+                }
 
             }
         });
