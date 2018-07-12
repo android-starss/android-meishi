@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical">
+
+<EditText
+    android:id="@+id/username"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="107dp"
+    android:ems="10"
+    android:hint="请输入用户名"
+    android:inputType="number"/>
+
+<requestFocus />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="44dp"
+        android:hint="请输入昵称"
+        android:inputType="text" >
+    </EditText>
+<EditText
+    android:id="@+id/psd"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/name"
+    android:layout_below="@+id/name"
+    android:layout_marginTop="44dp"
+    android:hint="请输入密码"
+    android:inputType="textPassword" >
+</EditText>
+
+
+<Button
+    android:id="@+id/bt"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/psd"
+    android:layout_below="@+id/psd"
+    android:layout_marginTop="44dp"
+    android:text="注册" />
+
+</RelativeLayout>

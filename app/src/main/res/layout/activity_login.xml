@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:ems="10"
+        android:hint="请输入名称"
+        android:inputType="text" />
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/psd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="44dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword" >
+    </EditText>
+
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/psd"
+        android:layout_below="@+id/psd"
+        android:layout_marginTop="44dp"
+        android:text="登录" />
+    <Button
+        android:id="@+id/goregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/smssdk_transparent"
+
+        android:layout_alignRight="@id/bt"
+        android:layout_below="@id/bt"
+        android:layout_marginTop="10dp"
+        android:text="没有账号？"/>
+
+</RelativeLayout>
