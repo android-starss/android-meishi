@@ -36,6 +36,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.hanxiaofeng.meishi.myInformationReset">
+
+        </activity>
+        <activity android:name="com.example.hanxiaofeng.meishi.myInformation">
+
+        </activity>
+        <activity android:name="com.example.chenxuhua.meishi.CreateuserActivity">
+
+        </activity>
+        <activity android:name="com.example.chenxuhua.meishi.RegisterActivity">
+
+        </activity>
+        <activity android:name="com.example.chenxuhua.meishi.LoginActivity"></activity>
     </application>
 
 </manifest>
